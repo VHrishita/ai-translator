@@ -4,6 +4,12 @@
 
 ---
 
+## 🚀 Live Site
+
+🔗 Visit here → **[https://github.com/VHrishita/ai-translator](https://ai-translator-two.vercel.app/)**
+
+---
+
 ## Features
 
 - 🎙 Real-time English speech transcription  
