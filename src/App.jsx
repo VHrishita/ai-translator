@@ -48,11 +48,11 @@ export default function App() {
         transcript += event.results[i][0].transcript;
       }
       setCaption(transcript);
-      translateText(transcript, targetLang); // translate live
+      translateText(transcript, targetLang);
     };
 
     recognition.onend = () => {
-      if (recording) recognition.start(); // auto-restart
+      if (recording) recognition.start();
     };
 
     recognitionRef.current = recognition;
@@ -64,7 +64,6 @@ export default function App() {
     if (recognitionRef.current) recognitionRef.current.stop();
   };
 
-  // Re-translate when targetLang changes
   useEffect(() => {
     if (caption) {
       translateText(caption, targetLang);
