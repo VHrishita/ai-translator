@@ -6,7 +6,7 @@ export default function App() {
   const [translated, setTranslated] = useState("");
   const [recording, setRecording] = useState(false);
   const recognitionRef = useRef(null);
-  const [targetLang, setTargetLang] = useState("es"); // default Spanish
+  const [targetLang, setTargetLang] = useState("es"); 
 
   const translateText = async (text, lang) => {
     if (!text) return;
