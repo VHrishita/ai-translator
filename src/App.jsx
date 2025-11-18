@@ -8,7 +8,6 @@ export default function App() {
   const recognitionRef = useRef(null);
   const [targetLang, setTargetLang] = useState("es"); // default Spanish
 
-  // Translation using MyMemory API (English as source)
   const translateText = async (text, lang) => {
     if (!text) return;
     try {
@@ -39,7 +38,7 @@ export default function App() {
     setTranslated("");
 
     const recognition = new window.webkitSpeechRecognition();
-    recognition.lang = "en-US"; // only English input works
+    recognition.lang = "en-US"; 
     recognition.continuous = true;
     recognition.interimResults = true;
 
